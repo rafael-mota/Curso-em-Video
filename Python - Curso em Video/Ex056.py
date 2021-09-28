@@ -1,20 +1,28 @@
 #Analisador completo
-idcount = 0
-fmenor = 0
-hmvelho = ""
-hmvelhoid = 0
-for i in range (1, 5):
-    print(f">>> {i}ª PESSOA <<<")
-    nome = str(input("Nome: ")).upper().strip()
-    idade = int(input("Idade: "))
-    sexo = str(input("[M/F]: ")).upper()
-    idcount += idade
-    if sexo == "F" and idade < 20:
-        fmenor += 1
-    elif sexo == "M":
+print(">>> Analisador completo <<<")
 
-hmvelho = nome
-hmvelhoid = idade
-print(f"A média de idade do grupo é de {idcount / 4}")
-print(f"O homem mais velho tem {hmvelhoid} e se chama {hmvelho}")
-print(f"Ao todo são {fmenor} mulheres com menos de 20 anos")
+idade = 0
+nome_homem_mais_velho = ""
+idade_homem_mais_velho = 0
+contador_fem_menor_idade = 0
+
+for i in range(4):
+    print(f"{i + 1}ª PESSOA")
+    input_nome = str(input("Nome: "))
+    input_idade = int(input("Idade: "))
+    input_sexo = str(input("Sexo [M ou F]: ").upper().strip())
+    idade += input_idade
+    if input_sexo == "M":
+        if input_idade > idade_homem_mais_velho:
+            idade_homem_mais_velho = input_idade
+            nome_homem_mais_velho = input_nome
+    elif input_sexo == "F":
+        if input_idade < 20:
+            contador_fem_menor_idade += 1
+    else:
+        print("Valor inválido, retome o processo!")
+        breakb
+
+print(f"A média de idade do grupo é de {idade / 4} anos")
+print(f"O homem mais velho tem {idade_homem_mais_velho} anos e se chama {nome_homem_mais_velho}")
+print(f"Ao todo são {contador_fem_menor_idade} mulheres com menos de 20 anos")
