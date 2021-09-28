@@ -21,7 +21,7 @@ for i in range(4):
             contador_fem_menor_idade += 1
     else:
         print("Valor inválido, retome o processo!")
-        breakb
+        break
 
 print(f"A média de idade do grupo é de {idade / 4} anos")
 print(f"O homem mais velho tem {idade_homem_mais_velho} anos e se chama {nome_homem_mais_velho}")
