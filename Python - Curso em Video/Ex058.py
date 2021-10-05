@@ -2,7 +2,7 @@
 import random
 
 print(">>> JOGO DA ADIVINHAÇÃO EM WHILE <<<")
-
+print("O computador gerou um número entre 0 e 10, tente adivinhar...")
 numero_cpu = random.randint(0, 10)
 numero = 0
 palpites = 0
