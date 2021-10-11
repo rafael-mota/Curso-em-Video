@@ -1,11 +1,13 @@
+#Menu de opcões
 valor_1 = int(input("Insira um valor: "))
 valor_2 = int(input("Insira outro valor: "))
-print('''O que você quer fazer com esse valores?
+menu = '''O que você quer fazer com esse valores?
 [1] SOMAR
 [2] MULTIPLICAR
 [3] MAIOR
 [4] NOVOS NÚMEROS
-[5] SAIR DO PROGRAMA''')
+[5] SAIR DO PROGRAMA'''
+print(menu)
 selecao = int(input(">>> "))
 while selecao != 5:
     if selecao == 1:
@@ -25,11 +27,6 @@ while selecao != 5:
         valor_2 = int(input("Insira outro valor: "))
     else:
         print("Insira uma opção válida")
-    print('''O que você quer fazer com esse valores?
-    [1] SOMAR
-    [2] MULTIPLICAR
-    [3] MAIOR
-    [4] NOVOS NÚMEROS
-    [5] SAIR DO PROGRAMA''')
+    print(menu)
     selecao = int(input(">>> "))
 print("FIM DO PROGRAMA")
