@@ -17,4 +17,3 @@ while cont not in "Nn":
     cont = str(input("Deseja continuar? [S/N] >>> ")).strip()[0]
 print(f"Você digitou {contador} números e a média foi {soma/contador}")
 print(f"O maior valor foi {maior} e o menor foi {menor}.")
-
