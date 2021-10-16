@@ -1,7 +1,5 @@
 # Analise de produtos e preço
-total_gasto = 0
-produtos_caros = 0
-preco_barato = 0
+total_gasto = produtos_caros = preco_barato = 0
 produto_barato = " "
 print(">>> ANÁLISE DE PRODUTOS <<<")
 while True:
