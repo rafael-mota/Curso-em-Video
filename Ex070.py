@@ -8,7 +8,6 @@ while True:
     nome_produto = str(input("Insira o nome do produto: ")).strip().capitalize()
     preco = float(input("Insira o preço do produto: R$"))
     total_gasto += preco
-    # Análise do produto acima de 1000 reais
     if preco >= 1000:
         produtos_caros += 1
     if produto_barato != nome_produto:

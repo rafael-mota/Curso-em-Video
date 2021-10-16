@@ -23,4 +23,3 @@ print(f"PROCESSO DE CADASTRO ENCERRADO. ")
 print(f"{contador_maioridade} pessoas cadastradas tem mais de 18 anos;")
 print(f"{contador_masculino} Homens foram cadastrados;")
 print(f"{contador_feminino_menor} Mulheres tem menos de 20 anos")
- 
