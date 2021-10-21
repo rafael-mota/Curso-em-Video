@@ -1,0 +1,10 @@
+# Tabela de colocados do Brasileirão com tuplas
+lista_times = ("Atlético-MG", "Flamengo", "Fortaleza", "Palmeiras", "Bragantino", "Corinthians", "Internacional", "Fluminense", "Athletico-PR", "Atlético-GO", "Cuiabá", "América-MG", "Ceará", "São Paulo", "Bahia", "Juventude", "Santos", "Grêmio", "Sport Recife", "Chapecoense")
+print("-"*88)
+print(f"Os 5 primeiros são {lista_times[:5]}.")
+print("-"*88)
+print(f"Os 4 últimos são {lista_times[-4:]}.")
+print("-"*290)
+print(f"Times em ordem alfabética {sorted(lista_times)}.")
+print("-"*290)
+print(f"A Chapecoense está na {lista_times.index('Chapecoense') + 1}ª posição.")
