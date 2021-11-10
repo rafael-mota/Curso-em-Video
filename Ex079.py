@@ -8,11 +8,9 @@ while True:
     else:
         print("Valor duplicado! Não será inserido na lista.")
     continuar = " "
-
     while continuar not in "SsNn":
         continuar = str(input("Deseja continuar? [S/N] >>> ")).strip()[0]
     if continuar in "Nn":
         break
-
 lista.sort()
 print(f"Os valores digitados em ordem foram: {lista}")

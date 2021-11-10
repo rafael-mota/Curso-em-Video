@@ -1,4 +1,4 @@
-#Analise de numeros pares, impares em listas com condicionais e looping.
+#Analise de numeros pares e impares em listas com condicionais e looping.
 lista = []
 lista_par = []
 lista_impar = []

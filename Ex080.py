@@ -18,5 +18,4 @@ while len(lista) != 5:
                 lista.insert((lista.index(i)) + 1, num)
                 print(f"Valor adicionado ao indice {lista.index(num)} da lista.")
                 break
-    print(lista)
 print(f"Os valores digitados em ordem foram: {lista}")
