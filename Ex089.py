@@ -14,11 +14,10 @@ while True:
     if continuar in "Nn":
         break
 print("▬"*20)
-print(f"No. NOME                     MÉDIA \n{'-'*34}")
+print(f"{'No.':<4}{'NOME':<10}{'MÉDIA':>20} \n{'-'*34}")
 for numero, nomes in enumerate(alunos):
-    print(f"{numero}   {nomes[0]}                     {(sum(nomes[1])/2):.1f}")
+    print(f"{numero:<4}{nomes[0]:<10}{(sum(nomes[1])/2):>20.1f}")
 print("▬"*20)
-
 while True:
     menu = int(input("Mostrar notas de qual aluno? (999 interrompe): "))
     if menu == 999:

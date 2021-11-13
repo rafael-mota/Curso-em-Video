@@ -1,7 +1,6 @@
 #Analise de dados com matrizes
 matriz = []
-pares = 0
-soma_tc = 0
+soma_tc = pares = 0
 for linha in range(3):
     matriz.append(list())
     for coluna in range(3):
@@ -10,7 +9,6 @@ for linha in range(3):
         if num % 2 == 0:
             pares += num
         if coluna == 2:
-            print("valor somado!")
             soma_tc += num
 print("=-="*8)
 for i in matriz:
