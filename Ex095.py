@@ -8,8 +8,9 @@ while True:
     partidas = int(input(f"Quantas partidas {jogador['nome']} jogou? "))
     jogador['gols'] = []
     for p in range(partidas):
-        jogador['gols'].append(input(f"Quantos gols na partida {p}? "))
+        jogador['gols'].append(input(f"Quantos gols na partida {p + 1}? "))
     jogadores.append(jogador.copy())
+
     continuar = " "
     while continuar not in "SsNn":
         continuar = str(input("Deseja continuar? [S/N] >>> "))
@@ -17,20 +18,20 @@ while True:
         break
 
 print("-=-"*18)
-print(f"{'cod'}  {'nome'}             {'gols'}                     {'total'}")
+print(f"{'cod'}{'nome'}{'gols'}{'total'}")
 print('---'*18)
 
 for n, j in enumerate(jogadores):
-    print(f"{n}   {j['nome']:<5}  {j['gols']:<10}")
+    print(f"{n}{j['nome']}{j['gols']}{}")
 
 while True:
-    num = int(input("Mostrar dados de qual jogador? "))
+    num = int(input("Mostrar dados de qual jogador? [999 PARA ENCERRAR]"))
     if num == 999:
         break
     elif num in range(len(jogadores)):
         print(f"-- LEVANTAMENTO DO JOGADOR {jogadores[num]['nome']}")
         for jogo, gol in enumerate(jogadores[num]['gols']):
-            print(f"No jogo {jogo} fez {gol} gols")
+            print(f"No jogo {jogo} fez {gol} gols.")
         print('---' * 18)
     else:
         print(f"ERRO! Não existe jogador com o código {num}! Tente novamente.")

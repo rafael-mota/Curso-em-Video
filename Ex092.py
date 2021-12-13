@@ -1,4 +1,4 @@
-#Análise de dadosde colaborador
+#Registro e análise de dados de colaborador
 import datetime
 while True:
     colaborador = {}
@@ -12,11 +12,10 @@ while True:
     colaborador['salario'] = float(input('Salário: R$'))
     colaborador['aposentadoria'] = (colaborador['contratacao'] + 35)
     break
-
 print(f"O nome do colaborador é {colaborador['nome']}.")
 print(f"{colaborador['nome']} tem {colaborador['idade']} anos de idade.")
 print(f"O número da CTPS é {colaborador['CTPS']}.")
 if colaborador['CTPS'] > 0:
     print(f"Contratação foi no ano de {colaborador['contratacao']}.")
     print(f"O salário de {colaborador['nome']} é de R${colaborador['salario']:.2f}.")
-    print(f"A aposentadoria de {colaborador['nome']} será no ano de {colaborador['aposentadoria']} e ele terá {colaborador['aposentadoria'] - idade} anos.")
+    print(f"A aposentadoria de {colaborador['nome']} será no ano de {colaborador['aposentadoria']} e terá {colaborador['aposentadoria'] - idade} anos.")
