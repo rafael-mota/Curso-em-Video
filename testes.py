@@ -1,17 +1,8 @@
-def contador(i, f, p):
-    """
-    => Função para contagem
-    :param i: início da contagem
-    :param f: fim da contagem
-    :param p: passo da contagem
-    :return: sem retorno
-    """
-    c = 1
-    while c <= f:
-        print(f"{c}", end=' ')
-        c += p
-    print("FIM!")
+from Ex107 import moeda
 
-contador(0, 220, 2)
+valor = float(input("Digite o preço: R$"))
+print(f"A metade de {valor} é {moeda.metade(valor)}")
+print(f"O dobro de {valor} é {moeda.dobro(valor)}")
+print(f"Aumentando 10%, temos {moeda.aumentar(valor, 10)}")
+print(f"Reduzindo 13%, temos {moeda.diminuir(valor, 13)}")
 
-help(contador)
